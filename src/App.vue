@@ -1,10 +1,11 @@
 <template>
   <div id="app">
-    <van-tabbar v-model="active">
-      <van-tabbar-item icon="home-o">标签</van-tabbar-item>
-      <van-tabbar-item icon="search">标签</van-tabbar-item>
-      <van-tabbar-item icon="friends-o">标签</van-tabbar-item>
-      <van-tabbar-item icon="setting-o">标签</van-tabbar-item>
+    <van-tabbar v-model="active" route="">
+      <van-tabbar-item replace icon="home-o" to="/">首页</van-tabbar-item>
+      <van-tabbar-item replace icon="search" to="/about">课程</van-tabbar-item>
+      <van-tabbar-item replace icon="friends-o">约课记录</van-tabbar-item>
+      <van-tabbar-item replace icon="setting-o">练习</van-tabbar-item>
+      <van-tabbar-item replace icon="setting-o">我的</van-tabbar-item>
     </van-tabbar>
     <router-view />
   </div>
